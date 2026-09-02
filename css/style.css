@@ -180,14 +180,6 @@ p { margin: 0; }
   aspect-ratio: 4 / 3;
 }
 
-.gallery-card.is-feature .gallery-card-media {
-  aspect-ratio: 16 / 8;
-}
-
-.gallery-card:not(.is-feature) .gallery-card-media {
-  aspect-ratio: 4 / 3;
-}
-
 .gallery-card-media img {
   width: 100%;
   height: 100%;
