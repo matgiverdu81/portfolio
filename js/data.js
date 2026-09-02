@@ -32,6 +32,22 @@ const POOL = Array.from({ length: 160 }, (_, i) => i + 1);
 
 const GALLERIES = [
   {
+    slug: "qundya",
+    title: "Qundya",
+    category: "Lifestyle",
+    description:
+      "Close, unhurried sessions in available light. Most of these are made with one lens and very little direction — the goal is a likeness, not a performance.",
+    photos: buildPhotos(POOL.slice(0, 14)),
+  },
+  {
+    slug: "apcel",
+    title: "NUS - Apcel",
+    category: "Event",
+    description:
+      "Close, unhurried sessions in available light. Most of these are made with one lens and very little direction — the goal is a likeness, not a performance.",
+    photos: buildPhotos(POOL.slice(0, 14)),
+  },
+  {
     slug: "portraits",
     title: "Portraits",
     category: "Portrait",
