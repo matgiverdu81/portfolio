@@ -17,11 +17,11 @@ document.addEventListener("DOMContentLoaded", () => {
   GALLERIES.forEach((g, i) => {
     const card = document.createElement("a");
     card.href = `gallery.html?id=${g.slug}`;
-    card.className = "gallery-card" + (i === 0 ? " is-feature" : "");
+    card.className = "gallery-card";
     card.dataset.category = g.category.toLowerCase();
     card.innerHTML = `
       <div class="gallery-card-media">
-        <img src="${g.cover}" alt="${g.title}" loading="${i === 0 ? "eager" : "lazy"}" />
+        <img src="${g.cover}" alt="${g.title}" loading="${i < 3 ? "eager" : "lazy"}" />
       </div>
       <div class="gallery-card-meta">
         <h3>${g.title}</h3>
