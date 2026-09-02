@@ -1,0 +1,53 @@
+name: Update photo manifest
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "images/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-manifest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Scan images/ and generate js/photos-manifest.json
+        run: |
+          node -e '
+            const fs = require("fs");
+            const path = require("path");
+
+            const root = "images";
+            const exts = [".jpg", ".jpeg", ".png", ".webp"];
+            const manifest = {};
+
+            if (fs.existsSync(root)) {
+              for (const slug of fs.readdirSync(root)) {
+                const dir = path.join(root, slug);
+                if (!fs.statSync(dir).isDirectory()) continue;
+
+                const files = fs
+                  .readdirSync(dir)
+                  .filter((f) => exts.includes(path.extname(f).toLowerCase()))
+                  .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
+
+                manifest[slug] = files.map((f) => `images/${slug}/${f}`);
+              }
+            }
+
+            fs.mkdirSync("js", { recursive: true });
+            fs.writeFileSync("js/photos-manifest.json", JSON.stringify(manifest, null, 2));
+          '
+
+      - name: Commit manifest if it changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add js/photos-manifest.json
+          git diff --cached --quiet || git commit -m "Update photo manifest"
+          git push
