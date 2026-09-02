@@ -40,6 +40,14 @@ const GALLERIES = [
     photos: buildPhotos(POOL.slice(0, 14)),
   },
   {
+    slug: "lesducs",
+    title: "Les Ducs",
+    category: "Event",
+    description:
+      "Close, unhurried sessions in available light. Most of these are made with one lens and very little direction — the goal is a likeness, not a performance.",
+    photos: buildPhotos(POOL.slice(0, 14)),
+  },
+  {
     slug: "apcel",
     title: "NUS - Apcel",
     category: "Event",
