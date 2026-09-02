@@ -37,7 +37,14 @@ const GALLERIES = [
     category: "Lifestyle",
     description:
       "Close, unhurried sessions in available light. Most of these are made with one lens and very little direction — the goal is a likeness, not a performance.",
-    photos: buildPhotos(POOL.slice(0, 14)),
+    photos: [
+     { src: "images/qundya/mathieu_photography-72.jpg" },
+     { src: "images/qundya/mathieu_photography-73.jpg" },
+      { src: "images/qundya/mathieu_photography-74.jpg" },
+      { src: "images/qundya/mathieu_photography-75.jpg" },
+      { src: "images/qundya/mathieu_photography-76.jpg" },
+      { src: "images/qundya/mathieu_photography-77.jpg" },
+   ]
   },
   {
     slug: "lesducs",
