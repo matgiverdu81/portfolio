@@ -362,6 +362,7 @@ p { margin: 0; }
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   grid-auto-rows: 8px;
   gap: 22px;
+  align-items: start;   /* ← add this line */
 }
 
 .masonry-item {
