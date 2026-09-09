@@ -81,49 +81,58 @@ const GALLERIES = [
    ]
   },
   {
-    slug: "portraits",
-    title: "Portraits",
-    category: "Portrait",
+    slug: "kevin",
+    title: "Kevin",
+    category: "Lifestyle",
     description:
       "Close, unhurried sessions in available light. Most of these are made with one lens and very little direction — the goal is a likeness, not a performance.",
-    photos: buildPhotos(POOL.slice(0, 14)),
+    photos: [
+      { src: "images/portraits/mathieu_photography-47.jpg" },
+      { src: "images/portraits/mathieu_photography-48.jpg" },
+      { src: "images/portraits/mathieu_photography-49.jpg" },
+      { src: "images/portraits/mathieu_photography-50.jpg" },
+      { src: "images/portraits/mathieu_photography-51.jpg" },
+      { src: "images/portraits/mathieu_photography-52.jpg" },
+      { src: "images/portraits/mathieu_photography-53.jpg" },
+      { src: "images/portraits/mathieu_photography-54.jpg" },
+   ]
   },
   {
-    slug: "coastal-light",
-    title: "Coastal Light",
-    category: "Landscape",
+    slug: "cil",
+    title: "NUS CIL",
+    category: "Event",
     description:
       "Two years of early mornings on the north shore, shot between tides. A slow catalogue of the same coastline in different weather.",
     photos: buildPhotos(POOL.slice(14, 26)),
   },
   {
-    slug: "city-after-dark",
-    title: "City After Dark",
-    category: "Street",
+    slug: "gxo",
+    title: "GXO",
+    category: "Event",
     description:
       "Handheld, high grain, mostly after 10pm. Streetlight and shopfronts standing in for a flash I try not to use.",
     photos: buildPhotos(POOL.slice(26, 40)),
   },
   {
-    slug: "wild-union",
-    title: "Wild Union",
-    category: "Wedding",
+    slug: "musg",
+    title: "Miss Universe Singapore 2025",
+    category: "Event",
     description:
       "A coastal wedding shot over one long day, from the first cup of coffee to the last song. Documentary coverage with a handful of arranged portraits.",
     photos: buildPhotos(POOL.slice(40, 54)),
   },
   {
-    slug: "on-film",
-    title: "On Film",
-    category: "Film",
+    slug: "shelovesdata",
+    title: "She Loves Data",
+    category: "Event",
     description:
       "Selections from three years of 35mm — mostly Portra 400 and a little Tri-X when the light ran out. Scanned, not digitally corrected.",
     photos: buildPhotos(POOL.slice(54, 66)),
   },
   {
-    slug: "still-life-studies",
-    title: "Still Life Studies",
-    category: "Studio",
+    slug: "vaa",
+    title: "Va'a World Championships 2026",
+    category: "Event",
     description:
       "Small studio sessions between paid work — testing light against objects that don't move, mostly borrowed from the kitchen table.",
     photos: buildPhotos(POOL.slice(66, 76)),
