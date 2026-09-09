@@ -1,9 +1,7 @@
-document.addEventListener("DOMContentLoaded", async () => {
+document.addEventListener("DOMContentLoaded", () => {
   const filterRow = document.getElementById("filterRow");
   const grid = document.getElementById("galleryGrid");
   if (!filterRow || !grid) return;
-
-  await applyPhotoManifest();
 
   const categories = ["All", ...new Set(GALLERIES.map((g) => g.category))];
 
