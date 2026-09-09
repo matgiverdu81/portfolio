@@ -38,8 +38,8 @@ const GALLERIES = [
     description:
       "Close, unhurried sessions in available light. Most of these are made with one lens and very little direction — the goal is a likeness, not a performance.",
     photos: [
-     { src: "images/qundya/mathieu_photography-72.jpg" },
-     { src: "images/qundya/mathieu_photography-73.jpg" },
+      { src: "images/qundya/mathieu_photography-72.jpg" },
+      { src: "images/qundya/mathieu_photography-73.jpg" },
       { src: "images/qundya/mathieu_photography-74.jpg" },
       { src: "images/qundya/mathieu_photography-75.jpg" },
       { src: "images/qundya/mathieu_photography-76.jpg" },
@@ -52,7 +52,18 @@ const GALLERIES = [
     category: "Event",
     description:
       "Close, unhurried sessions in available light. Most of these are made with one lens and very little direction — the goal is a likeness, not a performance.",
-    photos: buildPhotos(POOL.slice(0, 14)),
+    photos: [
+      { src: "images/lesducs/mathieu_photography-23.jpg" },
+      { src: "images/lesducs/mathieu_photography-24.jpg" },
+      { src: "images/lesducs/mathieu_photography-25.jpg" },
+      { src: "images/lesducs/mathieu_photography-26.jpg" },
+      { src: "images/lesducs/mathieu_photography-27.jpg" },
+      { src: "images/lesducs/mathieu_photography-28.jpg" },
+      { src: "images/lesducs/mathieu_photography-29.jpg" },
+      { src: "images/lesducs/mathieu_photography-30.jpg" },
+      { src: "images/lesducs/mathieu_photography-31.jpg" },
+      { src: "images/lesducs/mathieu_photography-32.jpg" },
+   ]
   },
   {
     slug: "apcel",
@@ -60,7 +71,14 @@ const GALLERIES = [
     category: "Event",
     description:
       "Close, unhurried sessions in available light. Most of these are made with one lens and very little direction — the goal is a likeness, not a performance.",
-    photos: buildPhotos(POOL.slice(0, 14)),
+    photos: [
+      { src: "images/apcel/mathieu_photography-55.jpg" },
+      { src: "images/apcel/mathieu_photography-56.jpg" },
+      { src: "images/apcel/mathieu_photography-57.jpg" },
+      { src: "images/apcel/mathieu_photography-58.jpg" },
+      { src: "images/apcel/mathieu_photography-59.jpg" },
+      { src: "images/apcel/mathieu_photography-60.jpg" },
+   ]
   },
   {
     slug: "portraits",
