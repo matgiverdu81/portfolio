@@ -10,8 +10,7 @@ function debounce(fn, ms) {
   };
 }
 
-document.addEventListener("DOMContentLoaded", async () => {
-  await applyPhotoManifest();
+document.addEventListener("DOMContentLoaded", () => {
   
   const slug = getParam("id");
   const gallery = GALLERIES.find((g) => g.slug === slug) || GALLERIES[0];
