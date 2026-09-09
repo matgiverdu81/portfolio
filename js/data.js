@@ -1,12 +1,3 @@
-// ---------------------------------------------------------------
-// Placeholder photo data. Replace picsum URLs with your own images
-// (see README.md) — everything else keeps working unchanged.
-// ---------------------------------------------------------------
-
-function picsum(id, w, h) {
-  return `https://picsum.photos/id/${id}/${w}/${h}`;
-}
-
 // A cycle of aspect ratios so every gallery mixes landscape, portrait,
 // square and panorama frames, the way a real contact sheet would.
 const DIM_CYCLE = [
@@ -19,16 +10,6 @@ const DIM_CYCLE = [
   { w: 950,  h: 1250 }, // portrait
   { w: 1250, h: 800 },  // landscape
 ];
-
-function buildPhotos(ids) {
-  return ids.map((id, i) => {
-    const dim = DIM_CYCLE[i % DIM_CYCLE.length];
-    return { id, src: picsum(id, dim.w, dim.h), w: dim.w, h: dim.h };
-  });
-}
-
-// Non-overlapping id ranges so no two galleries pull the same source image.
-const POOL = Array.from({ length: 160 }, (_, i) => i + 1);
 
 const GALLERIES = [
   {
@@ -266,5 +247,5 @@ const GALLERIES = [
 // Cover image for the home page index — first frame of each gallery,
 // cropped a little wider for the listing.
 GALLERIES.forEach((g) => {
-  g.cover = picsum(g.photos[0].id, 1400, 1000);
+  g.cover = g.photos[0] ? g.photos[0].src : "";
 });
