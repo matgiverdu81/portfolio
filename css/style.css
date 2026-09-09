@@ -107,7 +107,7 @@ p { margin: 0; }
 .hero {
   max-width: var(--maxw);
   margin: 0 auto;
-  padding: clamp(3rem, 6.5vw, 6.5rem) var(--gutter) clamp(2.5rem, 4vw, 4rem);
+  padding: clamp(3rem, 5vw, 6.5rem) var(--gutter) clamp(2.5rem, 3vw, 4rem);
 }
 
 .hero-kicker {
@@ -177,7 +177,7 @@ p { margin: 0; }
   overflow: hidden;
   background: var(--ink-raised);
   margin-bottom: 1rem;
-  aspect-ratio: 3 / 5;
+  aspect-ratio: 4 / 5;
 }
 
 .gallery-card-media img {
