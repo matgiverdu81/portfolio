@@ -15,11 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const slug = getParam("id");
   const gallery = GALLERIES.find((g) => g.slug === slug) || GALLERIES[0];
 
-  document.title = `${gallery.title} — Elin Cole Photography`;
+  document.title = `${gallery.title} — MG Photography`;
   document.getElementById("galCategory").textContent = gallery.category;
   document.getElementById("galTitle").textContent = gallery.title;
   document.getElementById("galDesc").textContent = gallery.description;
-  document.getElementById("galMeta").textContent = `${gallery.photos.length} frames`;
 
   const grid = document.getElementById("masonryGrid");
   gallery.photos.forEach((photo, idx) => {
