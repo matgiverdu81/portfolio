@@ -26,7 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="gallery-card-meta">
         <h3>${g.title}</h3>
         <p class="gallery-card-cat">${g.category}</p>
-        <p class="gallery-card-count">${g.photos.length} frames</p>
       </div>
     `;
     grid.appendChild(card);
