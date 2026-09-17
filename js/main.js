@@ -1,3 +1,30 @@
+function initHeroSlider() {
+  const slider = document.getElementById("heroSlider");
+  if (!slider) return;
+ 
+  const photos = HERO_PHOTOS.length ? HERO_PHOTOS : GALLERIES.map((g) => g.cover).filter(Boolean);
+  if (!photos.length) return;
+ 
+  photos.forEach((src, i) => {
+    const slide = document.createElement("div");
+    slide.className = "hero-slide" + (i === 0 ? " is-active" : "");
+    slide.innerHTML = `<img src="${src}" alt="" loading="${i === 0 ? "eager" : "lazy"}" />`;
+    slider.appendChild(slide);
+  });
+ 
+  if (photos.length < 2) return;
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+ 
+  const slides = slider.querySelectorAll(".hero-slide");
+  let current = 0;
+ 
+  setInterval(() => {
+    slides[current].classList.remove("is-active");
+    current = (current + 1) % slides.length;
+    slides[current].classList.add("is-active");
+  }, 5000);
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const filterRow = document.getElementById("filterRow");
   const grid = document.getElementById("galleryGrid");
