@@ -174,6 +174,7 @@ p { margin: 0; }
 }
 
 .gallery-card-media {
+  position: relative;
   overflow: hidden;
   background: var(--ink-raised);
   margin-bottom: 1rem;
@@ -191,6 +192,38 @@ p { margin: 0; }
 .gallery-card:hover .gallery-card-media img {
   transform: scale(1.035);
   filter: brightness(1);
+}
+
+.gallery-card-tooltip {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.2rem;
+  padding: 1rem 1.1rem 0.9rem;
+  background: linear-gradient(to top, rgba(12, 12, 11, 0.82) 0%, rgba(12, 12, 11, 0) 55%);
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+}
+ 
+.gallery-card:hover .gallery-card-tooltip,
+.gallery-card:focus-visible .gallery-card-tooltip {
+  opacity: 1;
+  transform: translateY(0);
+}
+ 
+.gallery-card-tooltip-title {
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  color: var(--paper);
+}
+ 
+.gallery-card-tooltip-cat {
+  font-size: 0.8rem;
+  color: var(--brass);
 }
 
 .gallery-card-meta h3 {
