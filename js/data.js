@@ -11,6 +11,12 @@ const DIM_CYCLE = [
   { w: 1250, h: 800 },  // landscape
 ];
 
+const HERO_PHOTOS = [
+  { src: "images/musg/mathieu_photography-18.jpg" },
+  { src: "images/vaa/mathieu_photography-143.jpg" },
+  { src: "images/cil/mathieu_photography-89.jpg" },
+                    ];
+
 const GALLERIES = [
   {
     slug: "qundya",
