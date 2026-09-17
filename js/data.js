@@ -12,10 +12,10 @@ const DIM_CYCLE = [
 ];
 
 const HERO_PHOTOS = [
-  { src: "images/musg/mathieu_photography-18.jpg" },
-  { src: "images/vaa/mathieu_photography-143.jpg" },
-  { src: "images/cil/mathieu_photography-89.jpg" },
-                    ];
+  "images/musg/mathieu_photography-18.jpg",
+  "images/vaa/mathieu_photography-143.jpg",
+  "images/cil/mathieu_photography-89.jpg",
+];
 
 const GALLERIES = [
   {
