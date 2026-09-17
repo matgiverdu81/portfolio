@@ -26,6 +26,7 @@ function initHeroSlider() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  initHeroSlider();
   const filterRow = document.getElementById("filterRow");
   const grid = document.getElementById("galleryGrid");
   if (!filterRow || !grid) return;
