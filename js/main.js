@@ -22,6 +22,10 @@ document.addEventListener("DOMContentLoaded", () => {
     card.innerHTML = `
       <div class="gallery-card-media">
         <img src="${g.cover}" alt="${g.title}" loading="${i < 3 ? "eager" : "lazy"}" />
+        <div class="gallery-card-tooltip">
+          <span class="gallery-card-tooltip-title">${g.title}</span>
+          <span class="gallery-card-tooltip-cat">${g.category}</span>
+        </div>
       </div>
       <div class="gallery-card-meta">
         <h3>${g.title}</h3>
