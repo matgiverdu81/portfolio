@@ -11,6 +11,10 @@ const DIM_CYCLE = [
   { w: 1250, h: 800 },  // landscape
 ];
 
+ function isVideo(src) {
+   return /\.(mp4|webm|m4v|mov)(#.*)?$/i.test(src);
+ }
+
 const HERO_PHOTOS = [
   "images/musg/mathieu_photography-18.jpg",
   "images/vaa/mathieu_photography-143.jpg",
@@ -253,6 +257,7 @@ const GALLERIES = [
 
 // Cover image for the home page index — first frame of each gallery,
 // cropped a little wider for the listing.
-GALLERIES.forEach((g) => {
-  g.cover = g.photos[0] ? g.photos[0].src : "";
-});
+   GALLERIES.forEach((g) => {
+     const first = g.photos.find((p) => !isVideo(p.src) || p.poster);
+     g.cover = first ? (isVideo(first.src) ? first.poster : first.src) : "";
+   });
