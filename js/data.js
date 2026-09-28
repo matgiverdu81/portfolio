@@ -233,7 +233,7 @@ const GALLERIES = [
     description:
       "Event coverage for She Loves Data at the LinkedIn headquarters in Singapore.",
     photos: [
-      { src: "images/shelovesdata/mathieu_photography-46.jpg" },
+      { src: "images/shelovesdata/mathieu_photography-43.jpg" },
       { src: "images/shelovesdata/mathieu_photography-33.jpg" },
       { src: "images/shelovesdata/mathieu_photography-34.jpg" },
       { src: "images/shelovesdata/mathieu_photography-35.jpg" },
@@ -244,7 +244,7 @@ const GALLERIES = [
       { src: "images/shelovesdata/mathieu_photography-40.jpg" },
       { src: "images/shelovesdata/mathieu_photography-41.jpg" },
       { src: "images/shelovesdata/mathieu_photography-42.jpg" },
-      { src: "images/shelovesdata/mathieu_photography-43.jpg" },
+      { src: "images/shelovesdata/mathieu_photography-46.jpg" },
       { src: "images/shelovesdata/mathieu_photography-44.jpg" },
       { src: "images/shelovesdata/mathieu_photography-45.jpg" },
    ]
