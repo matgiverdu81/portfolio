@@ -527,3 +527,39 @@ p { margin: 0; }
   .masonry-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 14px; }
   .lightbox-prev, .lightbox-next { padding: 0.5rem; }
 }
+
+   .masonry-item.is-video { position: relative; cursor: pointer; }
+
+   .masonry-item video {
+     width: 100%;
+     height: auto;
+     display: block;
+     transition: transform 0.5s ease, filter 0.5s ease;
+     filter: brightness(0.94);
+   }
+   .masonry-item:hover video { transform: scale(1.02); filter: brightness(1); }
+
+   .video-badge {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 52px;
+     height: 52px;
+     display: grid;
+     place-items: center;
+     border-radius: 50%;
+     color: var(--paper);
+     background: rgba(12, 12, 11, 0.55);
+     border: 1px solid var(--line-strong);
+     backdrop-filter: blur(6px);
+     pointer-events: none;
+     transition: background 0.25s ease, transform 0.25s ease;
+   }
+   .video-badge svg { margin-left: 3px; }
+   .masonry-item:hover .video-badge {
+     background: rgba(12, 12, 11, 0.75);
+     transform: translate(-50%, -50%) scale(1.06);
+   }
+
+   .lightbox-video { max-width: 100%; max-height: 82vh; }
