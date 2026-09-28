@@ -87,6 +87,19 @@ const GALLERIES = [
    ]
   },
   {
+    slug: "ritz",
+    title: "Republic Bar - Ritz-Carlton",
+    category: "Food and beverages",
+    description:
+      "Photo and video introduction of a new cocktail for the Republic bar at the Ritz-Carlton in Singapore.",
+    photos: [
+      { src: "images/ritz/mathieu_photography-ritz_1.jpg" },
+      { src: "images/ritz/mathieu_photography-ritz_2.jpg" },
+      { src: "images/ritz/Republic_Bartender_small.mp4" },
+      { src: "images/ritz/Republic_Caramboleh_small.mp4" },
+   ]
+  },
+  {
     slug: "qundya",
     title: "Qundya",
     category: "Lifestyle",
