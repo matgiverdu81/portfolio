@@ -89,7 +89,7 @@ const GALLERIES = [
   {
     slug: "ritz",
     title: "Republic Bar - Ritz-Carlton",
-    categoryies: ["Food and beverages", "Photo", "Video"],
+    categories: ["Food and beverages", "Photo", "Video"],
     description:
       "Photo and video introduction of a new cocktail for the Republic bar at the Ritz-Carlton in Singapore.",
     photos: [
