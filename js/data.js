@@ -117,7 +117,7 @@ const GALLERIES = [
     {
     slug: "vaa",
     title: "Va'a World Championships 2026",
-    categories: ["Event", "Photo"],
+    categories: ["Event", "Sport", "Photo"],
     description:
       "Coverage of the Va'a World Championships 2026 in Singapore.",
     photos: [
