@@ -177,7 +177,7 @@ const GALLERIES = [
     description:
       "Lookbook video for model Xue Jin",
     photos: [
-      { src: "images/xuejin/xue_jing_v6_small.mp4", poster: "images/xuejin/xue_jing_poster.jpg" },
+      { src: "images/xuejin/xue_jing_V6_small.mp4", poster: "images/xuejin/xue_jing_poster.jpg" },
    ]
   },
   {
@@ -283,6 +283,18 @@ const GALLERIES = [
       { src: "images/shelovesdata/mathieu_photography-46.jpg" },
       { src: "images/shelovesdata/mathieu_photography-44.jpg" },
       { src: "images/shelovesdata/mathieu_photography-45.jpg" },
+   ]
+  },
+  {
+    slug: "zitd",
+    title: "Zomb'in The Dark",
+    categories: ["Video"],
+    description:
+      "Just a few examples of the video content I have produced over the years for the event Zomb'in The Dark.",
+    photos: [
+      { src: "images/zitd/presentation_2024.mp4", poster: "images/zitd/presentation_2024_poster.jpg" },
+      { src: "images/zitd/pub_insta_laigneville.mp4", poster: "images/zitd/pub_insta_laigneville_poster.jpg" },
+      { src: "images/zitd/pub_insta_laigneville_2.mp4", poster: "images/zitd/pub_insta_laigneville_2_poster.jpg" },
    ]
   },
 ];
