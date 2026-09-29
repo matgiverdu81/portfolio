@@ -25,7 +25,7 @@ const GALLERIES = [
   {
     slug: "musg",
     title: "Miss Universe Singapore 2025",
-    category: "Event, Photo",
+    categories: ["Event", "Photo"],
     description:
       "Coverage of the Miss Universe Singapore 2025 pageantry, from the launch press conference to the grand Gala and beyond.",
     photos: [
@@ -56,7 +56,7 @@ const GALLERIES = [
   {
     slug: "cil",
     title: "NUS CIL",
-    category: "Event, Photo",
+    categories: ["Event", "Photo"],
     description:
       "Photo and video coverage of a series of events for the Centre for International Law of NUS with Ambassador Tommy Koh and fellow diplomats.",
     photos: [
@@ -89,7 +89,7 @@ const GALLERIES = [
   {
     slug: "ritz",
     title: "Republic Bar - Ritz-Carlton",
-    category: "Food and beverages, Photo, Video",
+    categoryies: ["Food and beverages", "Photo", "Video"],
     description:
       "Photo and video introduction of a new cocktail for the Republic bar at the Ritz-Carlton in Singapore.",
     photos: [
@@ -102,7 +102,7 @@ const GALLERIES = [
   {
     slug: "qundya",
     title: "Qundya",
-    category: "Lifestyle, Photo",
+    categories: ["Lifestyle", "Photo"],
     description:
       "Casual photoshoot with Qundya at Raffles Hotel for her valentine's outfit.",
     photos: [
@@ -117,7 +117,7 @@ const GALLERIES = [
     {
     slug: "vaa",
     title: "Va'a World Championships 2026",
-    category: "Event, Photo",
+    categories: ["Event", "Photo"],
     description:
       "Coverage of the Va'a World Championships 2026 in Singapore.",
     photos: [
@@ -154,7 +154,7 @@ const GALLERIES = [
   {
     slug: "lesducs",
     title: "Les Ducs",
-    category: "Event, Photo",
+    categories: ["Event", "Photo"],
     description:
       "Wine tasting and exclusive diner experience at a gastro restaurant in Singapore.",
     photos: [
@@ -173,7 +173,7 @@ const GALLERIES = [
   {
     slug: "xuejin",
     title: "Xue Jin",
-    category: "Lifestyle, Video",
+    categories: ["Lifestyle", "Video"],
     description:
       "Lookbook video for model Xue Jin",
     photos: [
@@ -183,7 +183,7 @@ const GALLERIES = [
   {
     slug: "because",
     title: "Because sport",
-    category: "Sport, Video",
+    categories: ["Sport", "Video"],
     description:
       "After movie of a boxing session for charity with Because Sport",
     photos: [
@@ -191,24 +191,28 @@ const GALLERIES = [
    ]
   },
   {
-    slug: "apcel",
-    title: "NUS - Apcel",
-    category: "Event, Photo",
+    slug: "gxo",
+    title: "GXO",
+    categories: ["Event", "Photo"],
     description:
-      "Academic event coverage for the National University of Singapore.",
+      "Corporate afterwork with GXO in Singapore.",
     photos: [
-      { src: "images/apcel/mathieu_photography-60.jpg" },
-      { src: "images/apcel/mathieu_photography-56.jpg" },
-      { src: "images/apcel/mathieu_photography-57.jpg" },
-      { src: "images/apcel/mathieu_photography-58.jpg" },
-      { src: "images/apcel/mathieu_photography-59.jpg" },
-      { src: "images/apcel/mathieu_photography-55.jpg" },
+      { src: "images/gxo/mathieu_photography-69.jpg" },
+      { src: "images/gxo/mathieu_photography-62.jpg" },
+      { src: "images/gxo/mathieu_photography-63.jpg" },
+      { src: "images/gxo/mathieu_photography-64.jpg" },
+      { src: "images/gxo/mathieu_photography-65.jpg" },
+      { src: "images/gxo/mathieu_photography-66.jpg" },
+      { src: "images/gxo/mathieu_photography-67.jpg" },
+      { src: "images/gxo/mathieu_photography-68.jpg" },
+      { src: "images/gxo/mathieu_photography-70.jpg" },
+      { src: "images/gxo/mathieu_photography-71.jpg" },
    ]
   },
   {
     slug: "kevin",
     title: "Kevin",
-    category: "Lifestyle, Photo",
+    categories: ["Lifestyle", "Photo"],
     description:
       "Lifestyle photoshoot with Kevin in various locations in Singapore.",
     photos: [
@@ -225,7 +229,7 @@ const GALLERIES = [
   {
     slug: "family",
     title: "Family photos",
-    category: "Lifestyle, Photo",
+    categories: ["Lifestyle", "Photo"],
     description:
       "A nice afternoon spent in several locations around Singapore for this family's souvenir photoshoot.",
     photos: [
@@ -243,30 +247,25 @@ const GALLERIES = [
       { src: "images/family/mathieu_photography-99.jpg" },
    ]
   },
-  
   {
-    slug: "gxo",
-    title: "GXO",
-    category: "Event, Photo",
+    slug: "apcel",
+    title: "NUS - Apcel",
+    categories: ["Event", "Photo"],
     description:
-      "Corporate afterwork with GXO in Singapore.",
+      "Academic event coverage for the National University of Singapore.",
     photos: [
-      { src: "images/gxo/mathieu_photography-69.jpg" },
-      { src: "images/gxo/mathieu_photography-62.jpg" },
-      { src: "images/gxo/mathieu_photography-63.jpg" },
-      { src: "images/gxo/mathieu_photography-64.jpg" },
-      { src: "images/gxo/mathieu_photography-65.jpg" },
-      { src: "images/gxo/mathieu_photography-66.jpg" },
-      { src: "images/gxo/mathieu_photography-67.jpg" },
-      { src: "images/gxo/mathieu_photography-68.jpg" },
-      { src: "images/gxo/mathieu_photography-70.jpg" },
-      { src: "images/gxo/mathieu_photography-71.jpg" },
+      { src: "images/apcel/mathieu_photography-60.jpg" },
+      { src: "images/apcel/mathieu_photography-56.jpg" },
+      { src: "images/apcel/mathieu_photography-57.jpg" },
+      { src: "images/apcel/mathieu_photography-58.jpg" },
+      { src: "images/apcel/mathieu_photography-59.jpg" },
+      { src: "images/apcel/mathieu_photography-55.jpg" },
    ]
   },
   {
     slug: "shelovesdata",
     title: "She Loves Data",
-    category: "Event, Photo",
+    categories: ["Event", "Photo"],
     description:
       "Event coverage for She Loves Data at the LinkedIn headquarters in Singapore.",
     photos: [
