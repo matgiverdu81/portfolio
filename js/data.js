@@ -96,7 +96,7 @@ const GALLERIES = [
       { src: "images/ritz/mathieu_photography-ritz_1.jpg" },
       { src: "images/ritz/mathieu_photography-ritz_2.jpg" },
       { src: "images/ritz/Republic_Bartender_small.mp4" },
-      { src: "images/ritz/Republic_Caramboleh_small.mp4" },
+      { src: "images/ritz/Republic_Caramboleh_small.mp4", poster: "images/ritz/caramboleh_poster.jpg"},
    ]
   },
   {
