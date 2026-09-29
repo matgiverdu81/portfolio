@@ -171,6 +171,16 @@ const GALLERIES = [
    ]
   },
   {
+    slug: "xuejin",
+    title: "Xue Jin",
+    category: "Lifestyle",
+    description:
+      "Lookbook video for model Xue Jin",
+    photos: [
+      { src: "images/xuejin/xue_jing_v6_small.mp4, poster: "images/xuejin/xue_jing_poster.jpg" },
+   ]
+  },
+  {
     slug: "apcel",
     title: "NUS - Apcel",
     category: "Event",
