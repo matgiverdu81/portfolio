@@ -298,11 +298,11 @@ p { margin: 0; }
 .about {
   max-width: var(--maxw);
   margin: 0 auto;
-  padding: clamp(3rem, 6vw, 5rem) var(--gutter);
+  padding: clamp(0rem, 6vw, 5rem) var(--gutter);
   display: grid;
   grid-template-columns: 0.85fr 1.15fr;
   gap: clamp(2rem, 5vw, 4rem);
-  border-top: 1px solid var(--line);
+  border-top: 0px solid var(--line);
   align-items: center;
 }
 
