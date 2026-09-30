@@ -155,7 +155,7 @@ p { margin: 0; }
 }
 
 .hero-kicker {
-  color: var(--paper-dim);
+  color: var(--paper);
   font-size: 0.95rem;
   margin-bottom: 1.25rem;
 }
@@ -213,7 +213,7 @@ p { margin: 0; }
 
 .gallery-card {
   display: block;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 0px solid var(--line);
   padding-bottom: 1.25rem;
 }
 
@@ -223,6 +223,7 @@ p { margin: 0; }
   background: var(--ink-raised);
   margin-bottom: 1rem;
   aspect-ratio: 4 / 5;
+  border-radius: 10%;
 }
 
 .gallery-card-media img {
