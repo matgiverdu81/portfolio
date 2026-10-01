@@ -36,28 +36,45 @@ function initShowreel() {
   }
 
   const video = document.getElementById("showreelVideo");
+  const frame = document.getElementById("showreelFrame");
   const closeBtn = document.getElementById("showreelClose");
+  const youtubeId = getYouTubeId(SHOWREEL_VIDEO);
 
   function open() {
     lightbox.hidden = false;
     document.body.style.overflow = "hidden";
-    video.src = SHOWREEL_VIDEO;
-    if (SHOWREEL_POSTER) video.poster = SHOWREEL_POSTER;
-    const playing = video.play();
-    if (playing) playing.catch(() => {});
+
+    if (youtubeId) {
+      frame.hidden = false;
+      frame.innerHTML = `<iframe src="https://www.youtube.com/embed/${youtubeId}?autoplay=1&rel=0" title="Showreel" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>`;
+    } else {
+      video.hidden = false;
+      video.src = SHOWREEL_VIDEO;
+      if (SHOWREEL_POSTER) video.poster = SHOWREEL_POSTER;
+      const playing = video.play();
+      if (playing) playing.catch(() => {});
+    }
   }
 
   function close() {
-    video.pause();
-    video.removeAttribute("src");
-    video.load();
+    if (youtubeId) {
+      frame.innerHTML = "";
+      frame.hidden = true;
+    } else {
+      video.pause();
+      video.removeAttribute("src");
+      video.load();
+      video.hidden = true;
+    }
     lightbox.hidden = true;
     document.body.style.overflow = "";
   }
 
   btn.addEventListener("click", open);
   closeBtn.addEventListener("click", close);
-  lightbox.addEventListener("click", (e) => { if (e.target === lightbox) close(); });
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) close();
+  });
   document.addEventListener("keydown", (e) => {
     if (lightbox.hidden) return;
     if (e.key === "Escape") close();
