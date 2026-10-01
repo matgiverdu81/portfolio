@@ -25,8 +25,48 @@ function initHeroSlider() {
   }, 5000);
 }
 
+function initShowreel() {
+  const btn = document.getElementById("showreelBtn");
+  const lightbox = document.getElementById("showreelLightbox");
+  if (!btn || !lightbox) return;
+
+  if (!SHOWREEL_VIDEO) {
+    btn.hidden = true;
+    return;
+  }
+
+  const video = document.getElementById("showreelVideo");
+  const closeBtn = document.getElementById("showreelClose");
+
+  function open() {
+    lightbox.hidden = false;
+    document.body.style.overflow = "hidden";
+    video.src = SHOWREEL_VIDEO;
+    if (SHOWREEL_POSTER) video.poster = SHOWREEL_POSTER;
+    const playing = video.play();
+    if (playing) playing.catch(() => {});
+  }
+
+  function close() {
+    video.pause();
+    video.removeAttribute("src");
+    video.load();
+    lightbox.hidden = true;
+    document.body.style.overflow = "";
+  }
+
+  btn.addEventListener("click", open);
+  closeBtn.addEventListener("click", close);
+  lightbox.addEventListener("click", (e) => { if (e.target === lightbox) close(); });
+  document.addEventListener("keydown", (e) => {
+    if (lightbox.hidden) return;
+    if (e.key === "Escape") close();
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   initHeroSlider();
+  initShowreel();
   const filterRow = document.getElementById("filterRow");
   const grid = document.getElementById("galleryGrid");
   if (!filterRow || !grid) return;
