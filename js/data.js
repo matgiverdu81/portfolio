@@ -14,6 +14,12 @@ const DIM_CYCLE = [
  function isVideo(src) {
    return /\.(mp4|webm|m4v|mov)(#.*)?$/i.test(src);
  }
+function getYouTubeId(url) {
+  const match = url.match(/(?:youtube\.com\/(?:watch\?v=|embed\/|shorts\/)|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
+  return match ? match[1] : null;
+}
+
+const SHOWREEL_VIDEO = "https://www.youtube.com/watch?v=bMtjrgf6UtQ"; // leave "" to hide the button
 
 const HERO_PHOTOS = [
   "images/musg/mathieu_photography-18.jpg",
